@@ -1,6 +1,6 @@
-# Boilerplate and Starter for Next JS 12+ and TypeScript
+# Boilerplate and Starter for Next JS 12+, TypeScript, Less and Ant Design
 
-🚀 Boilerplate and Starter for Next.js and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, PostCSS.
+🚀 Boilerplate and Starter for Next.js and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, Less, Ant Design.
 
 Clone this project and use it to create your own [Next.js](https://nextjs.org) project. This is a fork from [Next js Starter Boilerplate](https://creativedesignsguru.com/demo/Nextjs-Boilerplate/).
 
