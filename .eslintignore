@@ -1,2 +1,11 @@
 node_modules
-out
+
+# Ignore artifacts:
+coverage/
+out/
+public/
+__mocks__/
+
+commitlint.config.js
+jest.config.js
+*.d.ts
