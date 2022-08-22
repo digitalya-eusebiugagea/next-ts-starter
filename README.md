@@ -12,7 +12,7 @@ Developer experience first:
 - 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
 - 💎 Integrate with [Tailwind CSS](https://tailwindcss.com)
 - ✅ Strict Mode for TypeScript and React 18
-- 📏 Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals and more others for achieving top level code)
+- 📏 Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals and more others high industry standards recomendations)
 - 💖 Code Formatter with [Prettier](https://prettier.io)
 - 🦊 Husky for Git Hooks
 - 🚫 Lint-staged for running linters on Git staged files
