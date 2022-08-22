@@ -5,11 +5,23 @@ import {
   TwitterOutlined,
 } from '@ant-design/icons';
 import { Button } from 'antd';
+import cx from 'classnames';
 import React from 'react';
 
-const MediaButtons = () => {
+interface MediaButtonsProps {
+  direction: 'horizontal' | 'vertical';
+  isSticky?: boolean;
+}
+
+const MediaButtons: React.FC<MediaButtonsProps> = ({ direction, isSticky = false, ...props }) => {
+  const classes = cx('media-buttons', {
+    'media-buttons--is-sticky': isSticky,
+    'media-buttons--direction-horizontal': direction === 'horizontal',
+    'media-buttons--direction-vertical': direction === 'vertical',
+  });
+
   return (
-    <div className='media-buttons'>
+    <div className={classes} {...props}>
       <Button
         shape='circle'
         icon={<LinkedinFilled color='black' />}

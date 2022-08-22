@@ -4,6 +4,7 @@ import { Button, Col, Modal, Row, Typography } from 'antd';
 import React from 'react';
 
 import type { Person } from '@/types';
+import Paragraphs from '@/ui-kit/Paragraphs';
 
 export interface PersonViewModalProps extends ModalProps {
   img: string;
@@ -23,18 +24,13 @@ const PersonViewModal: React.FC<PersonViewModalProps> = ({ img, onClose, person,
             onClick={onClose}
           />
           <div className='person-view__content'>
-            {person.description?.map((paragraph, index) => (
-              <p
-                key={index}
-                dangerouslySetInnerHTML={{
-                  __html: paragraph || '',
-                }}
-              ></p>
-            ))}
-            <div className='person-view__email'>
-              <MailOutlined className='person-view__email-icon' />
-              <Typography.Text className='person-view__paragraph'>{person.email}</Typography.Text>
-            </div>
+            <Paragraphs paragraphs={person.description} />
+            {person.email && (
+              <div className='person-view__email'>
+                <MailOutlined className='person-view__email-icon' />
+                <Typography.Text className='person-view__paragraph'>{person.email}</Typography.Text>
+              </div>
+            )}
           </div>
         </Col>
       </Row>

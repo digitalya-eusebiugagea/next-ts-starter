@@ -1,24 +1,42 @@
-import React, { useState } from 'react';
+import { Col, Row, Typography } from 'antd';
+import React from 'react';
 
-import content from '@/content.json';
-import type { Person } from '@/types';
+import useContent from '@/hooks/useContent';
 
-import PersonViewModal from '../PersonViewModal';
+import Paragraphs from '../../ui-kit/Paragraphs';
+import PersonCard from '../PersonCard';
 
-const AboutUsSection = () => {
-  const [open, setOpen] = useState(false);
+const PresentSection = () => {
+  const content = useContent();
 
   return (
     <section className='about-us-section'>
       <div className='about-us-section__banner' />
-      <PersonViewModal
-        visible={open}
-        img='/assets/images/ic-close.png'
-        person={content.home.aboutUsSection.people[0] as Person}
-        onClose={() => setOpen(false)}
-      />
+      <div className='how-it-works-section__body'>
+        <Typography.Title className='how-it-works-section__title'>
+          {content.home.aboutUsSection.title}
+        </Typography.Title>
+        <div className='about-us-section__paragraphs-container'>
+          <Paragraphs paragraphs={content.home.aboutUsSection.paragraphs} />
+        </div>
+        <Row>
+          {content.home.aboutUsSection.people.map((person) => (
+            <Col
+              key={person.name}
+              span={12}
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                marginBottom: '100px',
+              }}
+            >
+              <PersonCard person={person} />
+            </Col>
+          ))}
+        </Row>
+      </div>
     </section>
   );
 };
 
-export default AboutUsSection;
+export default PresentSection;

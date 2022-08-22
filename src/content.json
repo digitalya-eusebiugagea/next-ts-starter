@@ -32,9 +32,11 @@
     },
     "aboutUsSection": {
       "title": "#insideHISTORY",
-      "paragraph1": "#insideHISTORY ist ein gemeinsames historisch-künstlerisches Projekt von katrinem, Sam Auinger, Melanie Eis und Fabian Eckert.",
-      "paragraph2": "Von der akademischen Musik kommend entwickelten katrinem und Sam Auinger im Laufe ihrer Karrieren ein immer intensiveres Interesse am im Alltag konkret erlebbaren Klang als Inspirationsquelle und Material und damit letztendlich für das Hören selbst.",
-      "paragraph3": "Gemeinsam mit Fabian Eckert und Melanie Eis erarbeiten sie für #insideHISTORY eine an den Hörenden orientierte künstlerische Arbeit, die an den Orten des Geschehens zur Reflektion von nationalsozialistischem Unrecht einlädt.",
+      "paragraphs": [
+        "<strong>#insideHISTORY</strong> ist ein gemeinsames historisch-künstlerisches Projekt von katrinem, Sam Auinger, Melanie Eis und Fabian Eckert.",
+        "Von der akademischen Musik kommend entwickelten <strong>katrinem</strong> und <strong>Sam Auinger</strong> im Laufe ihrer Karrieren ein immer intensiveres Interesse am im Alltag konkret erlebbaren Klang als Inspirationsquelle und Material und damit letztendlich für das Hören selbst.",
+        "Gemeinsam mit <strong>Fabian Eckert</strong> und <strong>Melanie Eis</strong> erarbeiten sie für <strong>#insideHISTORY</strong> eine an den Hörenden orientierte künstlerische Arbeit, die an den Orten des Geschehens zur Reflektion von nationalsozialistischem Unrecht einlädt."
+      ],
       "people": [
         {
           "name": "Fabian Eckert",
@@ -49,17 +51,34 @@
         {
           "name": "Melanie Eis",
           "role": "Projektleitung",
-          "email": "Melanie.Eis@bidigi.de"
+          "email": "Melanie.Eis@bidigi.de",
+          "description": [
+            "<strong>Dr. Melanie Eis</strong> ist Literaturwissenschaftlerin, Texterin und auf Fragen der Diversität spezialisiert.",
+            "Die Bedeutung von populärer Kultur, von Geschichte(n) und Fragen des Zusammenlebens begleiten ihre Bildungsarbeit von der Grundschule bis zur Universität.",
+            "Ihre Suche nach Möglichkeiten, wie sich gesellschaftliche und politisch-kulturelle Teilhabe für alle öffnen lässt, führte sie zur Konzeption von #insideHISTORY, denn hier sind Teilnehmende gefragt, selbst historische Reflektionen zu entwickeln."
+          ]
         },
         {
           "name": "Sam Auinger",
           "role": "Künstlerische Leitung",
-          "email": ""
+          "email": "",
+          "description": [
+            "<strong>Denken mit den Ohren.</strong>",
+            "<strong>Sam Auinger</strong> ist ein in Berlin lebender österreichischer Klangdenker, Komponist und Klangkünstler.",
+            "„Denken mit den Ohren“ versteht Auinger als kritische tägliche Praxis, um unsere Rolle in einer gefährdeten planetarischen Umwelt auf allen Ebenen, von der sozialen bis zur ökologischen, zu verstehen.",
+            "Für <strong>#insideHISTORY</strong> nimmt er Mitdenkende erstmals auf historische Klangerkundungen mit."
+          ]
         },
         {
-          "name": "Fabian Eckert",
+          "name": "katrinem",
           "role": "Künstlerische Leitung",
-          "email": ""
+          "email": "",
+          "description": [
+            "<strong>I walk and listen.</strong>",
+            "<strong>katrinem</strong> ist Komponistin, Performance-Künstlerin und Expertin für Gangbilder und Gehrhythmen.",
+            "Die Auseinandersetzung mit Klang und Raum ist ein wesentliches Merkmal ihrer Arbeiten.",
+            "Für <strong>#insideHISTORY</strong> lässt sie uns vergangene Rhythmen und Gegenbenheiten erkunden."
+          ]
         }
       ]
     }

@@ -1,28 +1,24 @@
 import React from 'react';
 
-import AboutUsSection from '@/components/AboutUsSection';
-import FeaturesSection from '@/components/FeaturesSection';
-import Header from '@/components/Header';
-import HowItWorksSection from '@/components/HowItWorksSection';
-import IntroSection from '@/components/IntroSection';
-import MediaButtons from '@/components/MediaButtons';
-import PresentSection from '@/components/PresentSection';
-import WhenItStartsSection from '@/components/WhenItStartsSection';
+// import AboutUsSection from '@/components/AboutUsSection';
+// import FeaturesSection from '@/components/FeaturesSection';
+// import HowItWorksSection from '@/components/HowItWorksSection';
+// import IntroSection from '@/components/IntroSection';
+// import PresentSection from '@/components/PresentSection';
+// import WhenItStartsSection from '@/components/WhenItStartsSection';
+import AppLayout from '@/layouts/AppLayout';
 
 const Index = () => {
   return (
-    <div>
-      <MediaButtons />
-      <Header />
-      <div style={{ position: 'relative' }}>
-        <IntroSection />
-        <FeaturesSection />
-        <HowItWorksSection />
-        <PresentSection />
-        <WhenItStartsSection />
-        <AboutUsSection />
-      </div>
-    </div>
+    <AppLayout>
+      <h1>Home</h1>
+      {/* <IntroSection />
+      <FeaturesSection />
+      <HowItWorksSection />
+      <PresentSection />
+      <WhenItStartsSection />
+      <AboutUsSection /> */}
+    </AppLayout>
   );
 };
 

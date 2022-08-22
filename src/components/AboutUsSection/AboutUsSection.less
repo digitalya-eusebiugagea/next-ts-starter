@@ -1,13 +1,29 @@
 .about-us-section {
+  background: rgba(0, 0, 0, 0.7) url('/assets/images/Background-Overlay.svg');
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
   &__banner {
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7)
-      url("/assets/images/bild-streifen-5.jpg");
+    background: rgba(0, 0, 0, 0.7) url('/assets/images/bild-streifen-5.jpg');
     background-blend-mode: darken;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+
+  &__paragraphs-container {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-family: 'RobotoMono-Regular';
+    padding: 0 20rem;
+    margin-bottom: 150px;
   }
 }

@@ -1,6 +1,7 @@
-import { Button, PageHeader } from 'antd';
+import { PageHeader } from 'antd';
 import React from 'react';
 
+import KfiButton from '@/components/KfiButton';
 import content from '@/content.json';
 
 const Header = () => {
@@ -29,7 +30,7 @@ const Header = () => {
           </a>
         </li>
       </ul>
-      <Button className='button'>{content.home.button}</Button>
+      <KfiButton>{content.home.button}</KfiButton>
     </PageHeader>
   );
 };
