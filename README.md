@@ -10,7 +10,8 @@ Developer experience first:
 
 - ⚡ [Next.js](https://nextjs.org) for Static Site Generator
 - 🔥 Type checking [TypeScript](https://www.typescriptlang.org)
-- 💎 Integrate with [Tailwind CSS](https://tailwindcss.com)
+- 💎 Integrate with [Less CSS](https://lesscss.org/)
+- 💎 Integrate with [Ant Design](https://ant.design/)
 - ✅ Strict Mode for TypeScript and React 18
 - 📏 Linter with [ESLint](https://eslint.org) (default NextJS, NextJS Core Web Vitals and more others high industry standards recomendations)
 - 💖 Code Formatter with [Prettier](https://prettier.io)
@@ -85,9 +86,12 @@ Open http://localhost:3000 with your favorite browser to see your project.
 You can easily configure Next js Boilerplate. Please change the following file:
 
 - `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your website favicon, you can generate from https://favicon.io/favicon-converter/
-- `src/styles/global.css`: your CSS file using Tailwind CSS
 - `src/utils/AppConfig.ts`: configuration file
-- `src/templates/Main.tsx`: default theme
+- `next.config.js => lessLoaderOptions.lessOptions.modifyVars`: change less variables (also antd theme variables)
+
+### Less
+
+The index files for styles is inside src/styles/index.less. In there you can use global imports and the compiler will take care of automatically imported all the files from glob patterns. This has been done with the help of a less plugin.
 
 ### Deploy to production
 
