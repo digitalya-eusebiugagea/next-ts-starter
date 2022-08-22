@@ -1,0 +1,67 @@
+{
+  "home": {
+    "nav": {
+      "item1": "Features",
+      "item2": "Wie es funktionert",
+      "item3": "Aktueles",
+      "item4": "Über uns"
+    },
+    "button": "Erfahre, wann es losgeht",
+    "introSection": {
+      "title": "Geschichte läuft, Geschichte klingt: Geschichte(n) erfahren.",
+      "paragraph1": "Ein Hörerlebnis, das zur persönlichen Reflektion von nationalsozialistischem Unrecht auffordert – an den Orten des Geschehens genauso wie an heutigen Erinnerungsorten.",
+      "paragraph2": "Unsere App ist bald erhältlich. Bitte melde Dich bei unserem Newsletter an und wir sagen Dir Bescheid, wenn es losgeht."
+    },
+    "featuresSection": {
+      "title": "Features"
+    },
+    "howItWorksSection": {
+      "title": "Wie es funktioniert:",
+      "download": "Du lädst die App kostenlos herunter und gibst deinen Standort frei, um Stück für Stück einen historischen Raum zu erkunden.",
+      "localSound": "Vor Ort kannst du in Berlin, München, Köln und Leipzig an verschiedenen Stationen durch Klanginstallationen Geschichte(n) aus der Zeit des Nationalsozialismus erfahren und eine eigene kritische historische Praxis testen.",
+      "change": "Wie verändert sich deine Erinnerung an nationalsozialistisches Unrecht?"
+    },
+    "presentSection": {
+      "title": "Aktuelles"
+    },
+    "whenItStartsSection": {
+      "title": "Erfahre, wann es losgeht",
+      "description": "Hinterlasse uns Deine E-Mail Adresse und wir benachrichtigen Dich, sobald die App verfügbar ist. Deine Daten werden natürlich vertraulich behandelt und an keine dritten Personen weiter gegeben.",
+      "inputPlaceholder": "Deine E-Mail Adresse",
+      "inputBtnText": "Ich will es wissen"
+    },
+    "aboutUsSection": {
+      "title": "#insideHISTORY",
+      "paragraph1": "#insideHISTORY ist ein gemeinsames historisch-künstlerisches Projekt von katrinem, Sam Auinger, Melanie Eis und Fabian Eckert.",
+      "paragraph2": "Von der akademischen Musik kommend entwickelten katrinem und Sam Auinger im Laufe ihrer Karrieren ein immer intensiveres Interesse am im Alltag konkret erlebbaren Klang als Inspirationsquelle und Material und damit letztendlich für das Hören selbst.",
+      "paragraph3": "Gemeinsam mit Fabian Eckert und Melanie Eis erarbeiten sie für #insideHISTORY eine an den Hörenden orientierte künstlerische Arbeit, die an den Orten des Geschehens zur Reflektion von nationalsozialistischem Unrecht einlädt.",
+      "people": [
+        {
+          "name": "Fabian Eckert",
+          "role": "Projektleitung",
+          "email": "Fabian.Eckert@bidigi.de",
+          "description": [
+            "<strong>Fabian Eckert</strong> ist Historiker und Ideenschmiede für das Erleben von Geschichte im urbanen Raum.",
+            "Die Frage der Zugänglichkeit von Lernmaterialien für verschiedene Lern- und Wahrnehmungstypen begleitet seine Arbeit seit einer Forschungstätigkeit zu schulischer Inklusion.",
+            "Urbaner Erkunder und Produzent von historischen Audiowalks war er schon zuvor. Für <strong>#insideHISTORY</strong> nimmt er Interessierte mit auf urbane Erkundungen von vier deutschen Großstädten."
+          ]
+        },
+        {
+          "name": "Melanie Eis",
+          "role": "Projektleitung",
+          "email": "Melanie.Eis@bidigi.de"
+        },
+        {
+          "name": "Sam Auinger",
+          "role": "Künstlerische Leitung",
+          "email": ""
+        },
+        {
+          "name": "Fabian Eckert",
+          "role": "Künstlerische Leitung",
+          "email": ""
+        }
+      ]
+    }
+  }
+}
