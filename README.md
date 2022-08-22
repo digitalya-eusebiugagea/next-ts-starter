@@ -21,7 +21,7 @@ Developer experience first:
 - 🦺 Unit Testing with Jest and React Testing Library
 - 🧪 E2E Testing with Cypress
 - 💡 Absolute Imports using `@` prefix
-- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript, Jest
+- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for ESLint, Prettier, TypeScript, Jest
 - 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
 - ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
 - 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
