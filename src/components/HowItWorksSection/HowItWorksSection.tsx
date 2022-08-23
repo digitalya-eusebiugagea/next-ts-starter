@@ -27,21 +27,21 @@ const HowItWorksSection = () => {
           {content.home.howItWorksSection.title}
         </Typography.Title>
         <Row gutter={80} className='how-it-works-section__items-container'>
-          <Col span={8}>
+          <Col xs={24} sm={24} lg={8}>
             <HowItWorksItem
               number={1}
               icon='/assets/images/ic-download.png'
               description={content.home.howItWorksSection.download}
             />
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={24} lg={8}>
             <HowItWorksItem
               number={2}
               icon='/assets/images/ic-local-sound.png'
               description={content.home.howItWorksSection.localSound}
             />
           </Col>
-          <Col span={8}>
+          <Col xs={24} sm={24} lg={8}>
             <HowItWorksItem
               number={3}
               icon='/assets/images/ic-change.png'

@@ -16,21 +16,16 @@ const PresentSection = () => {
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((value) => (
             <Col
               key={value}
-              span={8}
+              xs={24}
+              sm={24}
+              lg={8}
               style={{
                 display: 'flex',
                 justifyContent: 'center',
                 marginBottom: '100px',
               }}
             >
-              <div
-                style={{
-                  width: '400px',
-                  height: '400px',
-                  backgroundColor: 'red',
-                  borderRadius: '20px',
-                }}
-              ></div>
+              <div className='present-section__preview'></div>
             </Col>
           ))}
         </Row>

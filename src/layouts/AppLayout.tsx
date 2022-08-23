@@ -13,10 +13,11 @@ interface AppLayoutProps {
 }
 
 const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
-  const abc = Grid.useBreakpoint();
+  const currentBreakpoint = Grid.useBreakpoint();
 
-  const isMobile = !abc['md'];
-  console.log(abc);
+  const isMobile = currentBreakpoint['xs'] || !currentBreakpoint['lg'];
+  console.log(currentBreakpoint);
+
   return (
     <div>
       {!isMobile && <MediaButtons isSticky direction='vertical' />}

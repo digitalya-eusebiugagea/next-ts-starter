@@ -18,7 +18,11 @@
   }
 
   &__body {
-    padding: 165px;
+    padding: 8rem 0;
+
+    @media screen and (min-width: @screen-lg) {
+      padding: 8rem 2rem;
+    }
   }
 
   &__title {
@@ -30,14 +34,22 @@
     margin-bottom: 6rem !important;
   }
 
+  &__items-container {
+    margin: 0px !important;
+  }
+
   .item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 8rem;
+    padding: 0 1rem;
     box-sizing: border-box;
     text-align: center;
     color: white;
+
+    @media screen and (min-width: @screen-md) {
+      padding: 0 4rem;
+    }
 
     &__number {
       font-size: 96px;
