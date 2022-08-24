@@ -5,6 +5,7 @@
 
   .ant-modal-body {
     padding: 0;
+    height: 100%;
   }
 
   .ant-modal-close,
@@ -31,9 +32,10 @@
     padding: 20px 40px;
     display: flex;
     flex-direction: column;
+    height: 100%;
 
     @media screen and (min-width: @screen-md) {
-      padding: 80px;
+      padding: 40px 60px;
     }
   }
 
@@ -43,9 +45,10 @@
     line-height: 20px;
     font-family: 'RobotoMono-Regular';
     color: #0d0d0d;
+    overflow-y: auto;
 
     @media screen and (min-width: @screen-md) {
-      margin-top: 86px;
+      margin-top: 60px;
       font-size: 20px;
       line-height: 30px;
     }

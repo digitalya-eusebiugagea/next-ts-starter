@@ -1,5 +1,6 @@
 import { Button, Col, Grid, Row, Typography } from 'antd';
 import React, { useState } from 'react';
+import { InstagramEmbed } from 'react-social-media-embed';
 
 import useContent from '@/hooks/useContent';
 
@@ -25,6 +26,7 @@ const PresentSection = () => {
   return (
     <section className='present-section'>
       <div className='present-section__banner' />
+      <InstagramEmbed url='https://www.instagram.com/p/CUbHfhpswxt/' width={328} />
       <div className='present-section__body' id='present-section'>
         <Typography.Title className='how-it-works-section__title'>
           {content.home.presentSection.title}
