@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { MenuOutlined } from '@ant-design/icons';
 import { Button, Modal, PageHeader, Typography } from 'antd';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 import useContent from '@/hooks/useContent';
@@ -38,39 +41,52 @@ const PersonViewModal: React.FC = () => {
         <div className='mobile-navigation__menu-content'>
           <ul className='mobile-navigation__navigation'>
             <li className='mobile-navigation__navigation-item'>
-              <a href='#' className='mobile-navigation__navigation-link'>
-                {content.home.nav.item1}
-              </a>
+              <Link href='/#features-section' onClick={toggleOpen}>
+                <a className='mobile-navigation__navigation-link' onClick={toggleOpen}>
+                  {content.home.nav.item1}
+                </a>
+              </Link>
             </li>
             <li className='mobile-navigation__navigation-item'>
-              <a
-                href='#how-it-works-section'
-                className='mobile-navigation__navigation-link'
-                onClick={toggleOpen}
-              >
-                {content.home.nav.item2}
-              </a>
+              <Link href='/#how-it-works-section' onClick={toggleOpen}>
+                <a className='mobile-navigation__navigation-link' onClick={toggleOpen}>
+                  {content.home.nav.item2}
+                </a>
+              </Link>
             </li>
             <li className='mobile-navigation__navigation-item'>
-              <a href='#' className='mobile-navigation__navigation-link'>
-                {content.home.nav.item3}
-              </a>
+              <Link href='/#present-section' onClick={toggleOpen}>
+                <a className='mobile-navigation__navigation-link' onClick={toggleOpen}>
+                  {content.home.nav.item3}
+                </a>
+              </Link>
             </li>
             <li className='mobile-navigation__navigation-item'>
-              <a href='#' className='mobile-navigation__navigation-link'>
-                {content.home.nav.item4}
-              </a>
+              <Link href='/#about-us-section' onClick={toggleOpen}>
+                <a className='mobile-navigation__navigation-link' onClick={toggleOpen}>
+                  {content.home.nav.item4}
+                </a>
+              </Link>
             </li>
           </ul>
-          <KfiButton type='primary' style={{ marginTop: '1rem', marginBottom: '3.5rem' }}>
-            {content.home.button}
-          </KfiButton>
+          <Link href='/#when-it-starts-section'>
+            <KfiButton
+              type='link'
+              style={{ marginTop: '1rem', marginBottom: '3.5rem' }}
+              onClick={toggleOpen}
+            >
+              {content.home.button}
+            </KfiButton>
+          </Link>
           <MediaButtons direction='horizontal' />
-          <Typography.Link className='mobile-navigation__privacy-policy'>
-            Datenschutzerklärung
-            <br />
-            Impressum
-          </Typography.Link>
+          <div className='mobile-navigation__privacy-policy'>
+            <Link href='/datenschutz' onClick={toggleOpen}>
+              <Typography.Link>Datenschutzerklärung</Typography.Link>
+            </Link>
+            <Link href='/impressum' onClick={toggleOpen}>
+              <Typography.Link>Impressum</Typography.Link>
+            </Link>
+          </div>
         </div>
       </Modal>
     </>

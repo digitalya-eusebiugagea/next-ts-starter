@@ -20,9 +20,9 @@ const HowItWorksItem: React.FC<HowItWorksItemProps> = ({ number, icon, descripti
 
 const HowItWorksSection = () => {
   return (
-    <section className='how-it-works-section' id='how-it-works-section'>
+    <section className='how-it-works-section'>
       <div className='how-it-works-section__banner' />
-      <div className='how-it-works-section__body'>
+      <div className='how-it-works-section__body' id='how-it-works-section'>
         <Typography.Title className='how-it-works-section__title'>
           {content.home.howItWorksSection.title}
         </Typography.Title>

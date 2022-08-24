@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.7) url('/assets/images/bild-hero.png');
     background-blend-mode: darken;
@@ -15,10 +14,37 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
+    justify-content: flex-start;
+  }
+
+  &__banner-title {
+    font-family: 'LondrinaSolid-Regular';
+    text-align: center;
+    font-size: 32px !important;
+    letter-spacing: 0.64px;
+    color: #fff !important;
+
+    margin-top: 2rem;
+    margin-bottom: 3rem !important;
+    padding: 0 2rem;
+
+    @media screen and (min-width: @screen-sm) {
+      padding: 0 4rem;
+    }
+
+    @media screen and (min-width: @screen-md) {
+      padding: 0 7rem;
+    }
+  }
+
+  &__banner-icon {
+    color: #f4a58b;
+    font-size: 40px;
+    margin-top: 20px;
   }
 
   &__body {
-    margin-top: -40vh;
     background: rgba(0, 0, 0, 0.7) url('/assets/images/Background-Overlay.svg');
     background-blend-mode: darken;
     background-attachment: fixed;
@@ -28,7 +54,6 @@
 
     width: 100%;
     bottom: 0px;
-    padding: 54px 165px 140px 165px;
     font-size: 20px;
     line-height: 30px;
     font-family: 'RobotoMono-Regular';

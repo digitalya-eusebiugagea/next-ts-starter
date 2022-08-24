@@ -14,7 +14,10 @@ const PersonCard: React.FC<PersonCardProps> = ({ person }) => {
 
   return (
     <>
-      <Card className='person-card' onClick={() => setOpen(true)}>
+      <Card
+        className={`person-card person-card--${person.imgModifierClassname}`}
+        onClick={() => setOpen(true)}
+      >
         <Typography.Text className='person-card__name'>{person.name}</Typography.Text>
         <Typography.Text className='person-card__role'>{person.role}</Typography.Text>
         <Typography.Text className='person-card__email'>{person.email}</Typography.Text>

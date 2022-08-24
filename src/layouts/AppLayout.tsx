@@ -16,7 +16,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   const currentBreakpoint = Grid.useBreakpoint();
 
   const isMobile = currentBreakpoint['xs'] || !currentBreakpoint['lg'];
-  console.log(currentBreakpoint);
+  // console.log(currentBreakpoint);
 
   return (
     <div>

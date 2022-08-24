@@ -1,19 +1,36 @@
-import { Col, Row, Typography } from 'antd';
-import React from 'react';
+import { Button, Col, Grid, Row, Typography } from 'antd';
+import React, { useState } from 'react';
 
 import useContent from '@/hooks/useContent';
 
+const items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 const PresentSection = () => {
   const content = useContent();
+
+  const currentBreakpoint = Grid.useBreakpoint();
+  const isMobile = currentBreakpoint['xs'] || !currentBreakpoint['lg'];
+
+  const [data, setData] = useState(isMobile ? items.slice(0, 3) : items);
+
+  const shouldLoadMoreAppear = isMobile && data.length < 9;
+
+  const loadMore = () => {
+    if (data.length === 3) {
+      return setData(items.slice(0, 6));
+    }
+    return setData(items);
+  };
+
   return (
     <section className='present-section'>
       <div className='present-section__banner' />
-      <div className='how-it-works-section__body'>
+      <div className='present-section__body' id='present-section'>
         <Typography.Title className='how-it-works-section__title'>
           {content.home.presentSection.title}
         </Typography.Title>
         <Row>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((value) => (
+          {data.map((value) => (
             <Col
               key={value}
               xs={24}
@@ -29,6 +46,11 @@ const PresentSection = () => {
             </Col>
           ))}
         </Row>
+        {shouldLoadMoreAppear && (
+          <Button type='text' className='present-section__load-more' onClick={loadMore}>
+            Mehr laden...
+          </Button>
+        )}
       </div>
     </section>
   );

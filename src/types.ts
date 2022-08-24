@@ -3,4 +3,5 @@ export interface Person {
   role: string;
   email: string;
   description?: string[];
+  imgModifierClassname: string;
 }

@@ -1,11 +1,10 @@
 import React from 'react';
 
-// import AboutUsSection from '@/components/AboutUsSection';
-import FeaturesSection from '@/components/FeaturesSection';
+import AboutUsSection from '@/components/AboutUsSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import IntroSection from '@/components/IntroSection';
 import PresentSection from '@/components/PresentSection';
-// import WhenItStartsSection from '@/components/WhenItStartsSection';
+import WhenItStartsSection from '@/components/WhenItStartsSection';
 import AppLayout from '@/layouts/AppLayout';
 
 const Index = () => {
@@ -13,11 +12,11 @@ const Index = () => {
     <AppLayout>
       {/* <h1>Home</h1> */}
       <IntroSection />
-      <FeaturesSection />
+      {/* <FeaturesSection /> */}
       <HowItWorksSection />
       <PresentSection />
-      {/* <WhenItStartsSection /> */}
-      {/* <AboutUsSection /> */}
+      <WhenItStartsSection />
+      <AboutUsSection />
     </AppLayout>
   );
 };

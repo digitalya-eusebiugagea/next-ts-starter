@@ -12,23 +12,21 @@ const PresentSection = () => {
   return (
     <section className='about-us-section'>
       <div className='about-us-section__banner' />
-      <div className='how-it-works-section__body'>
+      <div className='about-us-section__body' id='about-us-section'>
         <Typography.Title className='how-it-works-section__title'>
           {content.home.aboutUsSection.title}
         </Typography.Title>
         <div className='about-us-section__paragraphs-container'>
           <Paragraphs paragraphs={content.home.aboutUsSection.paragraphs} />
         </div>
-        <Row>
+        <Row gutter={100} className='about-us-section__persons-card-row'>
           {content.home.aboutUsSection.people.map((person) => (
             <Col
               key={person.name}
-              span={12}
-              style={{
-                display: 'flex',
-                justifyContent: 'center',
-                marginBottom: '100px',
-              }}
+              xs={24}
+              sm={24}
+              md={12}
+              className='about-us-section__person-card-col'
             >
               <PersonCard person={person} />
             </Col>

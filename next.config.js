@@ -29,11 +29,9 @@ module.exports = withBundleAnalyzer(
       /* ... */
       lessOptions: {
         /* ... */
-        // modifyVars: {
-        //   "primary-color": "#9900FF",
-        //   "border-radius-base": "2px",
-        //   /* ... */
-        // },
+        modifyVars: {
+          'primary-color': '#F4A58B',
+        },
         javascriptEnabled: true,
         plugins: [lessPluginGlob],
         paths: [path.resolve(__dirname, 'src')], // This is the important part!

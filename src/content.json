@@ -46,7 +46,10 @@
             "<strong>Fabian Eckert</strong> ist Historiker und Ideenschmiede für das Erleben von Geschichte im urbanen Raum.",
             "Die Frage der Zugänglichkeit von Lernmaterialien für verschiedene Lern- und Wahrnehmungstypen begleitet seine Arbeit seit einer Forschungstätigkeit zu schulischer Inklusion.",
             "Urbaner Erkunder und Produzent von historischen Audiowalks war er schon zuvor. Für <strong>#insideHISTORY</strong> nimmt er Interessierte mit auf urbane Erkundungen von vier deutschen Großstädten."
-          ]
+          ],
+          "img": "/assets/images/people-fabian_default.png",
+          "imgHover": "/assets/images/people-fabian_mouseOver.png",
+          "imgModifierClassname": "people-fabian"
         },
         {
           "name": "Melanie Eis",
@@ -56,7 +59,10 @@
             "<strong>Dr. Melanie Eis</strong> ist Literaturwissenschaftlerin, Texterin und auf Fragen der Diversität spezialisiert.",
             "Die Bedeutung von populärer Kultur, von Geschichte(n) und Fragen des Zusammenlebens begleiten ihre Bildungsarbeit von der Grundschule bis zur Universität.",
             "Ihre Suche nach Möglichkeiten, wie sich gesellschaftliche und politisch-kulturelle Teilhabe für alle öffnen lässt, führte sie zur Konzeption von #insideHISTORY, denn hier sind Teilnehmende gefragt, selbst historische Reflektionen zu entwickeln."
-          ]
+          ],
+          "img": "/assets/images/people-melanie_default.png",
+          "imgHover": "/assets/images/people-melanie_mouseOver.png",
+          "imgModifierClassname": "people-melanie"
         },
         {
           "name": "Sam Auinger",
@@ -67,7 +73,10 @@
             "<strong>Sam Auinger</strong> ist ein in Berlin lebender österreichischer Klangdenker, Komponist und Klangkünstler.",
             "„Denken mit den Ohren“ versteht Auinger als kritische tägliche Praxis, um unsere Rolle in einer gefährdeten planetarischen Umwelt auf allen Ebenen, von der sozialen bis zur ökologischen, zu verstehen.",
             "Für <strong>#insideHISTORY</strong> nimmt er Mitdenkende erstmals auf historische Klangerkundungen mit."
-          ]
+          ],
+          "img": "/assets/images/people-sam_default.png",
+          "imgHover": "/assets/images/people-sam_mouseOver.png.png",
+          "imgModifierClassname": "people-sam"
         },
         {
           "name": "katrinem",
@@ -78,7 +87,10 @@
             "<strong>katrinem</strong> ist Komponistin, Performance-Künstlerin und Expertin für Gangbilder und Gehrhythmen.",
             "Die Auseinandersetzung mit Klang und Raum ist ein wesentliches Merkmal ihrer Arbeiten.",
             "Für <strong>#insideHISTORY</strong> lässt sie uns vergangene Rhythmen und Gegenbenheiten erkunden."
-          ]
+          ],
+          "img": "/assets/images/people-katrinem_default.png",
+          "imgHover": "/assets/images/people-katrinem_mouseOver.png",
+          "imgModifierClassname": "people-katrinem"
         }
       ]
     }

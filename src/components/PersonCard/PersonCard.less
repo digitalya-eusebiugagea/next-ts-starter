@@ -1,9 +1,65 @@
 .person-card {
-  width: 400px;
-  height: 400px;
-  background: grey; // 'linear-gradient(rgba(13, 13, 13, 0), rgba(13, 13, 13, 0.8));',
+  width: 300px;
+  height: 300px;
+  background: url('/assets/images/people-fabian_default.png'); // 'linear-gradient(rgba(13, 13, 13, 0), rgba(13, 13, 13, 0.8));',
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   border-radius: 20px;
+  border: unset !important;
   color: green;
+
+  &--people-fabian {
+    background: url('/assets/images/people-fabian_default.png');
+
+    :hover {
+      background: url('/assets/images/people-fabian_mouseOver.png');
+    }
+  }
+
+  &--people-melanie {
+    background: url('/assets/images/people-melanie_default.png');
+
+    :hover {
+      background: url('/assets/images/people-melanie_mouseOver.png');
+    }
+  }
+
+  &--people-sam {
+    background: url('/assets/images/people-sam_default.png');
+
+    :hover {
+      background: url('/assets/images/people-sam_mouseOver.png');
+    }
+  }
+
+  &--people-katrinem {
+    background: url('/assets/images/people-katrinem_default.png');
+
+    :hover {
+      background: url('/assets/images/people-katrinem_mouseOver.png');
+    }
+  }
+
+  @media screen and (min-width: @screen-sm) {
+    width: 350px;
+    height: 350px;
+  }
+
+  @media screen and (min-width: @screen-sm) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media screen and (min-width: @screen-xl) {
+    width: 350px;
+    height: 350px;
+  }
+
+  @media screen and (min-width: @screen-xxl) {
+    width: 400px;
+    height: 400px;
+  }
 
   .ant-card-body {
     width: 100%;
@@ -11,8 +67,16 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'RobotoMono-Bold';
+
+    @media screen and (min-width: @screen-xl) {
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: @screen-xxl) {
+      font-size: 24px;
+    }
   }
 
   &__name {

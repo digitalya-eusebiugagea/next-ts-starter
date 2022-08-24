@@ -6,7 +6,7 @@ import React from 'react';
 const KfiButton: React.FC<ButtonProps> = ({ className, children, type = 'default', ...props }) => {
   const classes = cx(`kfi-button ${className}`, {
     'kfi-button--primary': type === 'default',
-    'kfi-button--secondary': type === 'primary',
+    'kfi-button--secondary': type === 'primary' || type === 'link',
   });
 
   return (
