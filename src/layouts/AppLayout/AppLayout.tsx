@@ -3,10 +3,10 @@ import type { ReactNode } from 'react';
 import React from 'react';
 
 import MediaButtons from '@/components/MediaButtons';
-import MobileNavigation from '@/components/MobileNavigation';
 
 import Footer from '../Footer';
 import Header from '../Header';
+import MobileNavigation from '../MobileNavigation';
 
 interface AppLayoutProps {
   children: ReactNode;

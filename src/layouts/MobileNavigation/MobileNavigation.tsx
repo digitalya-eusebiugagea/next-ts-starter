@@ -5,10 +5,9 @@ import { Button, Modal, PageHeader, Typography } from 'antd';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
+import KfiButton from '@/components/KfiButton';
+import MediaButtons from '@/components/MediaButtons';
 import useContent from '@/hooks/useContent';
-
-import KfiButton from '../KfiButton';
-import MediaButtons from '../MediaButtons';
 
 const PersonViewModal: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -19,7 +18,7 @@ const PersonViewModal: React.FC = () => {
   return (
     <>
       <PageHeader className='mobile-navigation__header'>
-        <p>#iH</p>
+        <img src='/icons/iH-logo-small-wo.png' alt='ds' width={60} height={40} />
         <Button
           className='person-view__close-button'
           icon={<MenuOutlined />}

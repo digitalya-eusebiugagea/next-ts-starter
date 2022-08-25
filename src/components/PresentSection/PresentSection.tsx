@@ -4,7 +4,17 @@ import { InstagramEmbed } from 'react-social-media-embed';
 
 import useContent from '@/hooks/useContent';
 
-const items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const items = [
+  'https://www.instagram.com/p/ChmRv0oIv-U/?igshid=YmMyMTA2M2Y=',
+  'https://www.instagram.com/p/ChmRq9poaOw/?igshid=YmMyMTA2M2Y=',
+  'https://www.instagram.com/p/ChmRlGkojse/?igshid=YmMyMTA2M2Y=',
+  'https://www.instagram.com/p/ChmRv0oIv-U/?igshid=YmMyMTA2M2Y=',
+  'https://www.instagram.com/p/ChmRq9poaOw/?igshid=YmMyMTA2M2Y=',
+  'https://www.instagram.com/p/ChmRlGkojse/?igshid=YmMyMTA2M2Y=',
+  'https://www.instagram.com/p/ChmRv0oIv-U/?igshid=YmMyMTA2M2Y=',
+  'https://www.instagram.com/p/ChmRq9poaOw/?igshid=YmMyMTA2M2Y=',
+  'https://www.instagram.com/p/ChmRlGkojse/?igshid=YmMyMTA2M2Y=',
+];
 
 const PresentSection = () => {
   const content = useContent();
@@ -26,7 +36,6 @@ const PresentSection = () => {
   return (
     <section className='present-section'>
       <div className='present-section__banner' />
-      <InstagramEmbed url='https://www.instagram.com/p/CUbHfhpswxt/' width={328} />
       <div className='present-section__body' id='present-section'>
         <Typography.Title className='how-it-works-section__title'>
           {content.home.presentSection.title}
@@ -44,7 +53,8 @@ const PresentSection = () => {
                 marginBottom: '100px',
               }}
             >
-              <div className='present-section__preview'></div>
+              {/* <div className='present-section__preview'></div> */}
+              <InstagramEmbed url={value} width={328} />
             </Col>
           ))}
         </Row>

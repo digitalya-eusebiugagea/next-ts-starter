@@ -16,6 +16,10 @@
     background-repeat: no-repeat;
 
     justify-content: flex-start;
+
+    @media screen and (min-width: @screen-lg) {
+      flex-direction: row;
+    }
   }
 
   &__banner-title {
@@ -36,6 +40,14 @@
     @media screen and (min-width: @screen-md) {
       padding: 0 7rem;
     }
+
+    @media screen and (min-width: @screen-lg) {
+      margin-top: -55vh;
+      margin-left: 12vw;
+
+      font-size: 36px !important;
+      letter-spacing: 0.72px;
+    }
   }
 
   &__banner-icon {
@@ -44,13 +56,14 @@
     margin-top: 20px;
   }
 
+  &__banner-iphone {
+    @media screen and (min-width: @screen-lg) {
+      margin-top: -34vh;
+    }
+  }
+
   &__body {
-    background: rgba(0, 0, 0, 0.7) url('/assets/images/Background-Overlay.svg');
-    background-blend-mode: darken;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-image: radial-gradient(circle at 77% 29%, #232c33, #0b1116 97%);
 
     width: 100%;
     bottom: 0px;
@@ -58,5 +71,43 @@
     line-height: 30px;
     font-family: 'RobotoMono-Regular';
     display: flex;
+
+    @media screen and (min-width: @screen-lg) {
+      margin-top: -61vh;
+    }
+  }
+
+  &__text {
+    @media screen and (min-width: @screen-lg) {
+      padding-left: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+    }
+
+    @media screen and (min-width: @screen-xl) {
+      padding-left: 165px;
+      padding-top: 2rem;
+      padding-bottom: 165px;
+    }
+  }
+
+  &__buttons-container {
+    position: relative;
+    margin-top: -2rem;
+  }
+
+  &__install-button {
+    width: 118px;
+    height: 35px;
+
+    &:last-of-type {
+      margin-left: 1rem;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 74px;
+    left: 0.7rem;
   }
 }
