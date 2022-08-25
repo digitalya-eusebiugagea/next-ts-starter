@@ -1,9 +1,0 @@
-<svg width="1728" height="1000" viewBox="0 0 1728 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill="url(#pe2op2wjba)" d="M0 0h1728v1000H0z" style="mix-blend-mode:overlay"/>
-    <defs>
-        <radialGradient id="pe2op2wjba" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-1288.88184 706.84142 -896.69584 -1635.0697 1326.38 293.151)">
-            <stop stop-color="#787878"/>
-            <stop offset="1"/>
-        </radialGradient>
-    </defs>
-</svg>

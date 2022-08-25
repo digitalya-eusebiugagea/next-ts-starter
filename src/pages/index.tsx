@@ -1,25 +1,9 @@
 import React from 'react';
 
-import AboutUsSection from '@/components/AboutUsSection';
-import FeaturesSection from '@/components/FeaturesSection';
-import HowItWorksSection from '@/components/HowItWorksSection';
-import IntroSection from '@/components/IntroSection';
-import PresentSection from '@/components/PresentSection';
-import WhenItStartsSection from '@/components/WhenItStartsSection';
-import AppLayout from '@/layouts/AppLayout';
+import Hello from '@/components/Hello';
 
 const Index = () => {
-  return (
-    <AppLayout>
-      {/* <h1>Home</h1> */}
-      <IntroSection />
-      <FeaturesSection />
-      <HowItWorksSection />
-      <PresentSection />
-      <WhenItStartsSection />
-      <AboutUsSection />
-    </AppLayout>
-  );
+  return <Hello />;
 };
 
 export default Index;
