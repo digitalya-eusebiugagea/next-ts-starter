@@ -27,7 +27,7 @@ const IntroSection = () => {
         {isMobile && <DownOutlined color='pink' className='intro-section__banner-icon' />}
       </div>
       <div className='intro-section__body'>
-        <div style={{ width: '53%' }} className='intro-section__text'>
+        <div style={{ width: isMobile ? '100%' : '53%' }} className='intro-section__text'>
           <Typography.Paragraph style={{ color: 'white' }}>
             {content.home.introSection.paragraph1}
           </Typography.Paragraph>
@@ -46,7 +46,7 @@ const IntroSection = () => {
             </Link>
           </div>
         </div>
-        <div style={{ width: '47%' }}></div>
+        <div style={{ width: isMobile ? '0%' : '47%' }}></div>
       </div>
     </section>
   );
