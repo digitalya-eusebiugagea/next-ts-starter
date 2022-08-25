@@ -1,5 +1,4 @@
 import 'normalize.css';
-import '../styles/index.less';
 
 import type { AppProps } from 'next/app';
 
