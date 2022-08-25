@@ -1,6 +1,7 @@
 import React from 'react';
 
 import AboutUsSection from '@/components/AboutUsSection';
+import FeaturesSection from '@/components/FeaturesSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import IntroSection from '@/components/IntroSection';
 import PresentSection from '@/components/PresentSection';
@@ -12,7 +13,7 @@ const Index = () => {
     <AppLayout>
       {/* <h1>Home</h1> */}
       <IntroSection />
-      {/* <FeaturesSection /> */}
+      <FeaturesSection />
       <HowItWorksSection />
       <PresentSection />
       <WhenItStartsSection />

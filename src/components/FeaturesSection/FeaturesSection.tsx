@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import { Button } from 'antd';
+import React, { useRef, useState } from 'react';
 import type { Settings } from 'react-slick';
 import Slider from 'react-slick';
 
 const FeaturesSection = () => {
   const settings: Settings = {
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -30,12 +31,14 @@ const FeaturesSection = () => {
   const iphoneStyles = {};
   const appScreenStyles = {};
 
+  const sliderRef = useRef<Slider | null>(null);
+
   return (
     <section className='feature-section'>
       <div className='features-section__banner'></div>
       {/* <Carousel /> */}
       <div className='features-section__body' id='features-section'>
-        <Slider {...settings}>
+        <Slider {...settings} ref={sliderRef}>
           {imagesSrc.map((imgSrc, index) => (
             <div key={imgSrc}>
               <div style={{ margin: '0 auto' }}>
@@ -62,6 +65,18 @@ const FeaturesSection = () => {
             </div>
           ))}
         </Slider>
+        <Button
+          className='features-section__left-arrow'
+          onClick={() => sliderRef.current?.slickPrev()}
+        >
+          <img src='/icons/ic-arrow-left.svg' alt='me' width={50} />
+        </Button>
+        <Button
+          className='features-section__right-arrow'
+          onClick={() => sliderRef.current?.slickNext()}
+        >
+          <img src='/icons/ic-arrow-right.svg' alt='me' width={50} />
+        </Button>
       </div>
     </section>
   );

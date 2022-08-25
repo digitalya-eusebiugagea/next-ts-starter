@@ -10,9 +10,14 @@
     background-repeat: no-repeat;
   }
 
+  &__body {
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
   &__iphone-container {
     position: relative;
-    background-color: red;
+    // background-color: red;
     margin: 0 auto;
 
     width: 170px;
@@ -63,5 +68,21 @@
         background-color: black !important;
       }
     }
+  }
+
+  &__left-arrow {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 20px);
+    height: auto;
+    border: unset;
+  }
+
+  &__right-arrow {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 20px);
+    height: auto;
+    border: unset;
   }
 }
