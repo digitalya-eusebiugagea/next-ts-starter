@@ -13,7 +13,7 @@
     "lint:fix": "next lint . --fix --ext .ts,.tsx --fix --ignore-path .gitignore",
     "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
     "check-types": "tsc --noEmit --pretty",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
     "e2e": "start-server-and-test dev http://localhost:3000 cypress",

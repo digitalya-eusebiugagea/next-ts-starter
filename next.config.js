@@ -3,10 +3,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 module.exports = withBundleAnalyzer({
-  nextjs: {
-    localIdentNameFollowDev: true, // default false, for easy to debug on PROD mode
-  },
-
   eslint: {
     dirs: ['.'],
   },

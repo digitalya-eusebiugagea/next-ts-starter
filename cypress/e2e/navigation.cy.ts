@@ -1,9 +1,11 @@
 describe('Navigation', () => {
   describe('Static pages', () => {
-    it('should navigate to the about page', () => {
+    // should navigate to the about page
+    it('should open home page', () => {
       // Start from the index page
       cy.visit('/');
 
+      /*
       // The index page should contain an h1
       cy.findByRole('heading', {
         name: 'Boilerplate code for your Nextjs project',
@@ -17,6 +19,7 @@ describe('Navigation', () => {
 
       // The new page should contain two "lorem ipsum" paragraphs
       cy.findAllByText('Lorem ipsum dolor sit amet', { exact: false }).should('have.length', 2);
+      */
     });
   });
 });

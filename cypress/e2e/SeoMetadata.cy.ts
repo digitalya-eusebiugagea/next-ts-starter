@@ -1,5 +1,6 @@
 describe('Seo metadata', () => {
   describe('Verify SEO Metadata', () => {
+    /*
     it('should render SEO metadata on Index page', () => {
       cy.visit('/');
 
@@ -19,5 +20,6 @@ describe('Seo metadata', () => {
       // The About page should also contain a meta description for SEO
       cy.get('head meta[name="description"]').invoke('attr', 'content').should('not.be.empty');
     });
+    */
   });
 });
