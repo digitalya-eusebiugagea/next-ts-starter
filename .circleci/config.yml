@@ -1,0 +1,24 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.1.0
+
+jobs:
+  semantic_release:
+    executor: node/default
+    steps:
+      - checkout
+      - when:
+          condition:
+            equal: [ main, << pipeline.git.branch >> ]
+          steps:
+            - node/install-packages:
+                pkg-manager: npm
+            - run:
+                command: npm run semantic-release
+                name: Create and publish semantic release
+
+workflows:
+  sample:
+    jobs:
+      - semantic_release
