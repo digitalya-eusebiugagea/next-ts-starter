@@ -1,4 +1,5 @@
 module.exports = {
+  branches: ['main'],
   plugins: [
     [
       '@semantic-release/commit-analyzer',
@@ -7,6 +8,7 @@ module.exports = {
           noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING'],
         },
         preset: 'angular',
+        // Make these also produce a change to be available in changelog
         releaseRules: [
           { type: 'build', release: 'patch' },
           { type: 'chore', release: 'patch' },
@@ -26,6 +28,7 @@ module.exports = {
           noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING'],
         },
         preset: 'conventionalcommits',
+        // Make these also produce a change to be available in changelog
         presetConfig: {
           types: [
             { type: 'build', section: 'Build System', hidden: false },
@@ -55,5 +58,4 @@ module.exports = {
       },
     ],
   ],
-  branches: ['main'],
 };
