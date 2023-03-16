@@ -4,15 +4,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "build-stats": "cross-env ANALYZE=true npm run build",
     "export": "next export",
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next out",
-    "lint": "next lint . --ext .js,.jsx,.ts,.tsx --fix --ignore-path .gitignore",
-    "lint:fix": "next lint . --fix --ext .js,.jsx,.ts,.tsx --fix --ignore-path .gitignore",
+    "lint": "next lint . -c .eslintrc --ext .js,.jsx,.ts,.tsx --fix --ignore-path .gitignore",
+    "lint:fix": "next lint . -c .eslintrc --fix --ext .js,.jsx,.ts,.tsx --fix --ignore-path .gitignore",
     "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
-    "check-types": "tsc --noEmit --pretty",
+    "check-types": "tsc --noEmit --pretty && tsc --project cypress --noEmit --pretty",
     "test": "jest --passWithNoTests",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
@@ -21,8 +22,7 @@
     "prepare": "husky install",
     "semantic-release": "semantic-release",
     "commit": "cz",
-    "clear:dependencies": "rm -rf node_modules/",
-    "postbuild": "next-sitemap"
+    "clear:dependencies": "rm -rf node_modules/"
   },
   "dependencies": {
     "classnames": "^2.3.2",
