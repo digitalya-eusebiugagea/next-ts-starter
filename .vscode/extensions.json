@@ -4,5 +4,59 @@
     "esbenp.prettier-vscode",
     "mikestead.dotenv",
     "Orta.vscode-jest"
+    // https://stackoverflow.com/questions/35773299/how-can-you-export-the-visual-studio-code-extension-list
+    // This are all the extensions I use to make DX better
+    // aaron-bond.better-comments
+    // abusaidm.html-snippets
+    // alefragnani.project-manager
+    // atlassian.atlascode
+    // bengreenier.vscode-node-readme
+    // ChakrounAnas.turbo-console-log
+    // christian-kohler.npm-intellisense
+    // christian-kohler.path-intellisense
+    // chrmarti.regex
+    // csstools.postcss
+    // DavidAnson.vscode-markdownlint
+    // dbaeumer.vscode-eslint
+    // DotJoshJohnson.xml
+    // dsznajder.es7-react-js-snippets
+    // eamodio.gitlens
+    // EditorConfig.EditorConfig
+    // esbenp.prettier-vscode
+    // formulahendry.auto-close-tag
+    // formulahendry.auto-rename-tag
+    // GrapeCity.gc-excelviewer
+    // idered.npm
+    // jackpanyj.tinypng
+    // johnpapa.vscode-peacock
+    // kisstkondoros.vscode-codemetrics
+    // mikestead.dotenv
+    // mkxml.vscode-filesize
+    // monokai.theme-monokai-pro-vscode
+    // ms-azuretools.vscode-docker
+    // ms-vscode-remote.remote-containers
+    // ms-vsliveshare.vsliveshare
+    // Orta.vscode-jest
+    // PKief.material-icon-theme
+    // planbcoding.vscode-react-refactor
+    // pnp.polacode
+    // pranaygp.vscode-css-peek
+    // quicktype.quicktype
+    // redhat.vscode-yaml
+    // shd101wyy.markdown-preview-enhanced
+    // steoates.autoimport
+    // streetsidesoftware.code-spell-checker
+    // techer.open-in-browser
+    // tomoki1207.pdf
+    // traBpUkciP.vscode-npm-scripts
+    // VisualStudioExptTeam.intellicode-api-usage-examples
+    // VisualStudioExptTeam.vscodeintellicode
+    // vscode-icons-team.vscode-icons
+    // WallabyJs.quokka-vscode
+    // wayou.vscode-todo-highlight
+    // wix.vscode-import-cost
+    // xabikos.JavaScriptSnippets
+    // yzhang.markdown-all-in-one
+    // Zignd.html-css-class-completion
   ]
 }
