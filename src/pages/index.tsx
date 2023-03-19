@@ -27,7 +27,7 @@ const useStyles = makeStyles()((theme) => ({
       marginBottom: 0,
     },
 
-    '&:not(:first-child)': {
+    '&:not(:first-of-type)': {
       marginLeft: theme.spacing(2),
       [theme.breakpoints.up('md')]: {
         marginLeft: 0,
