@@ -1,6 +1,7 @@
 {
   "name": "next-js-boilerplate",
-  "version": "2.1.0",
+  "version": "1.0.0",
+  "author": "Gagea Eusebiu-Andrei",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,7 +15,7 @@
     "lint:fix": "next lint . -c .eslintrc --fix --ext .js,.jsx,.ts,.tsx --fix --ignore-path .gitignore",
     "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
     "check-types": "tsc --noEmit --pretty",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "test:staged": "jest --bail",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
