@@ -17,4 +17,5 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   // Add this manually to main next.config.js to prevent conflict
   i18n,
+  swcMinify: true,
 });
