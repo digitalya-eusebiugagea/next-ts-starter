@@ -1,0 +1,6 @@
+# Available only on the server
+HOSTNAME=localhost
+PORT=8080
+
+# Available on both server and web
+NEXT_PUBLIC_ANALYTICS_ID=abcdefghijk
