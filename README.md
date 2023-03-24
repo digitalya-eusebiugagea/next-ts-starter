@@ -4,7 +4,7 @@
 
 Clone this project and use it to create your own [Next.js](https://nextjs.org) project. This project was heavily inspired by this two repositories: [Next js Starter Boilerplate](https://creativedesignsguru.com/demo/Nextjs-Boilerplate/) and [TS NextJS Tailwind Starter](https://creativedesignsguru.com/demo/Nextjs-Boilerplate/).
 
-### Features
+## Features
 
 Developer experience first:
 
@@ -18,6 +18,7 @@ Developer experience first:
 - 🐶 Husky & Lint Staged — Run scripts on your staged files before they are committed
 - 🚓 Conventional Commit Lint — Make sure you & your teammates follow conventional commits
 - 🎁 Semantic Release - Automatic changelog generation
+- 🖌 Renovate — To keep your dependencies up to date
 - 🤖 Next SEO - SEO metadata, JSON-LD and Open Graph tags
 - 🗺️ Next Sitemap - Generate sitemap.xml and robots.txt
 - ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
@@ -51,14 +52,19 @@ Built-in feature from Next.js:
 
 - Node.js 18+ and npm
 
-### Getting started
+## Getting started
 
-Run the following command on your local environment:
+This project was developed such that the **main** branch has everything that you need to get started. All the basic configurations you need. Then if you need additional things (you can find these under *Expansion pack*) like internationalization, e2e testing, storybook or integration with a component library you'll have to create your own branch and merge with the other ones you need. In the end you have a fully configured starter with everything you need.
+
+For example, if you want internationalization and integration with material ui, you'll have to follow the next steps:
 
 ```shell
-git clone --depth=1 https://github.com/ixartz/Next-js-Boilerplate.git my-project-name
+git clone --depth=1 https://github.com/ixartz/Next-js-Boilerplate.git my-project-name # Clone the projects
 cd my-project-name
-npm install
+git checkout -b starter                 # Create a branch starting from main branch
+git merge i18n                          # Add internationalization
+git merge mui                           # Add Material UI
+npm install                             # Install packages
 ```
 
 Then, you can run locally in development mode with live reload:
@@ -97,7 +103,7 @@ Open http://localhost:3000 with your favorite browser to see your project.
 └── tsconfig.json                   # TypeScript configuration
 ```
 
-### Deploy to production
+## Deploy to production
 
 You can see the results locally in production mode with:
 
@@ -116,14 +122,14 @@ npm run build-prod
 
 Now, your app is ready to be deployed. All generated files are located at `out` folder, which you can deploy with any hosting service.
 
-### Customization
+## Customization
 
 You can easily configure NextJS Boilerplate. Please change the following file:
 
 - `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your website favicon, you can generate from https://favicon.io/favicon-converter/
 - `src/utils/AppConfig.ts`: configuration file
 
-### Recommended component structure
+## Recommended component structure
 
 We recommend collocating all the files related to a component. This means that instead of having the component in a directory, the tests for the component in a different directory and styles in a different one, put all these files in a directory named after the component. Then just use an `index.ts` to export from there the component by default. This has proven to be more **scalable** and **maintainable**.
 
@@ -138,7 +144,7 @@ We recommend collocating all the files related to a component. This means that i
 export { default } from './ComponentName.tsx'
 ```
 
-### Testing
+## Testing
 
 All tests are colocated with the source code inside the same directory. So, it makes it easier to find them. Unfortunately, it is not possible with the `pages` folder which is used by Next.js for routing. So, what is why we suggest to create a `pages.test` folder to write tests from files located in `pages` folder.
 
@@ -147,7 +153,7 @@ npm run test                        # Run your tests
 npm run test:staged                 # Run your tests with the --bail option
 ```
 
-### Scripts
+## Scripts
 
 ```shell
 npm run postbuild                   # Runs after the build, it generates the sitemap
@@ -175,10 +181,95 @@ This is how it would look using next lint:
 "lint:fix": "next lint . -c .eslintrc --fix --ext .js,.jsx,.ts,.tsx --fix --ignore-path .gitignore"
 ```
 
-### VSCode information (optional)
+## VSCode information (optional)
 
 If you are VSCode users, you can have a better integration with VSCode by installing the suggested extension in `.vscode/extension.json`. The starter code comes up with Settings for a seamless integration with VSCode. The Debug configuration is also provided for frontend and backend debugging experience.
 
 With the plugins installed on your VSCode, ESLint and Prettier can automatically fix the code and show you the errors. Same goes for testing, you can install VSCode Jest extension to automatically run your tests and it also show the code coverage in context.
 
 Pro tips: if you need a project wide type checking with TypeScript, you can run a build with <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> on Mac.
+
+## Git flow of all the incorporated tools
+
+![Git flow](/readme/git_flow.png)
+
+### Notes
+
+**Mac users** may need to give executable permissions to all the `husky hooks` by running the command below.
+
+```shell
+chmod +x .husky/*
+```
+
+## Expansion package
+
+### **cypress** - 🧪 E2E Testing with Cypress
+
+It adds this files and directories
+
+```shell
+├── cypress.config.js                       # Cypress configuration
+├── cypress                                 # Directory containing everything cypress related
+├──── e2e                                   # Cypress tests
+├──── fixtures                              # Mocks
+├──── support                               # Global config that modifies cypress
+├──── tsconfig.json                         # TypeScript configuration for cypress
+```
+
+It adds 4 scripts
+
+```shell
+npm run cypress                             # Run cypress (opens it too)
+npm run cypress:headless                    # Run cypress
+npm run e2e                                 # Start server and run cypress (opens it too)
+npm run e2e:headless                        # Start server and run cypress
+```
+
+It modifies `.eslint` by adding configuration for files ending in `.cy.ts`.
+
+### - **i18n** - 🌐 Internationalization with next-i18next
+
+It adds this files
+
+```shell
+├── next-i18next.config.js                       # Next-i18next configuration
+```
+
+Modifies _app so that it supports internationalization.
+
+Example of using internationalization.
+![Internationalization usage example](/readme/i18n.png)
+
+### **storybook** - 🖋️ Documentation and component showcasing with Storybook
+
+It adds this files and directories
+
+```shell
+├── .storybook                                   # Directory containing storybook configurations
+├── src/stories                                  # Directory auto-generated by storybook with example stories
+```
+
+It adds 2 scripts
+
+```shell
+npm run storybook                             # Run storybook
+npm run build:storybook                       # Build storybook
+```
+
+### **mui** - 🫶 Integration with Material UI component library
+
+It adds this files and directories
+
+```shell
+. styles                                         # Directory containing styles configuration
+├── createEmotionCache.ts                        # Create emotion cache for styles
+├── makeStyles.ts                                # Exports makeStyles and withStyles used for creating styles
+├── theme.ts                                     # The theme configuration
+```
+
+It modifies `_app.tsx` and `_document.tsx` so that you have a seamless integration with Material UI.
+
+**Note**: You should always import `makeStyles` and `withStyles` from `@styles/makeStyles` https://mui.com/material-ui/guides/interoperability/#jss-tss
+
+Example of writing styles (use either `makeStyles` or `sx` property)
+![Material UI usage example](/readme/mui.png)
