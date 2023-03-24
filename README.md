@@ -18,7 +18,7 @@ Developer experience first:
 - 🐶 Husky & Lint Staged — Run scripts on your staged files before they are committed
 - 🚓 Conventional Commit Lint — Make sure you & your teammates follow conventional commits
 - 🎁 Semantic Release - Automatic changelog generation
-- 🖌 Renovate — To keep your dependencies up to date
+- 🖌 [Renovate](https://docs.renovatebot.com/) — To keep your dependencies up to date
 - 🤖 Next SEO - SEO metadata, JSON-LD and Open Graph tags
 - 🗺️ Next Sitemap - Generate sitemap.xml and robots.txt
 - ⚙️ [Bundler Analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
@@ -73,7 +73,7 @@ Then, you can run locally in development mode with live reload:
 npm run dev
 ```
 
-Open http://localhost:3000 with your favorite browser to see your project.
+Open <http://localhost:3000> with your favorite browser to see your project.
 
 ```shell
 .
@@ -108,8 +108,8 @@ Open http://localhost:3000 with your favorite browser to see your project.
 You can see the results locally in production mode with:
 
 ```shell
-$ npm run build
-$ npm run start
+npm run build
+npm run start
 ```
 
 The generated HTML and CSS files are minified (built-in feature from Next js).
@@ -126,7 +126,7 @@ Now, your app is ready to be deployed. All generated files are located at `out` 
 
 You can easily configure NextJS Boilerplate. Please change the following file:
 
-- `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your website favicon, you can generate from https://favicon.io/favicon-converter/
+- `public/apple-touch-icon.png`, `public/favicon.ico`, `public/favicon-16x16.png` and `public/favicon-32x32.png`: your website favicon, you can generate from <https://favicon.io/favicon-converter/>
 - `src/utils/AppConfig.ts`: configuration file
 
 ## Recommended component structure
@@ -171,7 +171,7 @@ npm run commit                      # Make a git commit with indications from co
 npm run clear:dependencies          # Remove node_modules
 ```
 
-For `next export` see this https://stackoverflow.com/questions/61724368/what-is-the-difference-between-next-export-and-next-build-in-next-js
+For `next export` see this <https://stackoverflow.com/questions/61724368/what-is-the-difference-between-next-export-and-next-build-in-next-js>
 
 `lint` and `lint:fix` scripts are using `eslint`, not `next lint`, because the latter can't reach the `.eslintrc` config used in the project, no matter how it is used.
 This is how it would look using next lint:
@@ -188,6 +188,19 @@ If you are VSCode users, you can have a better integration with VSCode by instal
 With the plugins installed on your VSCode, ESLint and Prettier can automatically fix the code and show you the errors. Same goes for testing, you can install VSCode Jest extension to automatically run your tests and it also show the code coverage in context.
 
 Pro tips: if you need a project wide type checking with TypeScript, you can run a build with <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> on Mac.
+
+## Notes
+
+### Semantic release
+
+You have an example on how to set up commit lint in a CI/CD environment in the .circleci folder.
+For more info, please see <https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration>.
+
+### Renovate
+
+It gives you automated dependency updates. Multi-platform and multi-language.
+
+Please check here the supported platforms <https://docs.renovatebot.com/modules/platform/>
 
 ## Git flow of all the incorporated tools
 
@@ -269,7 +282,7 @@ It adds this files and directories
 
 It modifies `_app.tsx` and `_document.tsx` so that you have a seamless integration with Material UI.
 
-**Note**: You should always import `makeStyles` and `withStyles` from `@styles/makeStyles` https://mui.com/material-ui/guides/interoperability/#jss-tss
+**Note**: You should always import `makeStyles` and `withStyles` from `@styles/makeStyles` <https://mui.com/material-ui/guides/interoperability/#jss-tss>
 
 Example of writing styles (use either `makeStyles` or `sx` property)
 ![Material UI usage example](/readme/mui.png)
