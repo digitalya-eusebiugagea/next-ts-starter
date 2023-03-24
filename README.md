@@ -37,9 +37,9 @@ Built-in feature from Next.js:
 - **i18n** - 🌐 Internationalization with next-i18next
 - **storybook** - 🖋️ Documentation and component showcasing with Storybook
 - **mui** - 🫶 Integration with Material UI component library
-- **antd** - 🫶 Integration with Ant Design component library
-- **chakra** - 🫶 Integration with Chakra UI component library
-- **mantine** - 🫶 Integration with Mantine UI component library
+- **antd** - 🫶 Integration with Ant Design component library **[WIP]**
+- **chakra** - 🫶 Integration with Chakra UI component library **[WIP]**
+- **mantine** - 🫶 Integration with Mantine UI component library **[WIP]**
 
 ### Philosophy
 
