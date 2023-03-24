@@ -8,10 +8,7 @@ import Head from 'next/head';
 import * as React from 'react';
 import { createEmotionSsrAdvancedApproach } from 'tss-react/next/pagesDir';
 
-import ColorModeContext from '@/contexts/ColorModeContext';
-
-import themeDark from '../styles/theme-dark';
-import themeLight from '../styles/theme-light';
+import theme from '@/styles/theme';
 
 export interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
@@ -20,30 +17,16 @@ export interface MyAppProps extends AppProps {
 const MyApp = (props: MyAppProps) => {
   const { Component, pageProps } = props;
 
-  const [mode, setMode] = React.useState<'light' | 'dark'>('light');
-  const theme = React.useMemo(() => (mode === 'light' ? themeLight : themeDark), [mode]);
-
-  const colorMode = React.useMemo(
-    () => ({
-      toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
-      },
-    }),
-    [],
-  );
-
   return (
     <>
       <Head>
         <meta name='viewport' content='initial-scale=1, width=device-width' />
       </Head>
-      <ColorModeContext.Provider value={colorMode}>
-        <ThemeProvider theme={theme}>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline />
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </ColorModeContext.Provider>
+      <ThemeProvider theme={theme}>
+        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 };

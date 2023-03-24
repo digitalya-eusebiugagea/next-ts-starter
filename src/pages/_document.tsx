@@ -2,7 +2,7 @@ import { getInitColorSchemeScript } from '@mui/material';
 import { Head, Html, Main, NextScript } from 'next/document';
 import * as React from 'react';
 
-import { roboto } from '@/styles/fonts';
+import { roboto } from '@/styles/theme';
 import { WebConfig } from '@/utils/WebConfig';
 
 import { augmentDocumentWithEmotionCache } from './_app';
