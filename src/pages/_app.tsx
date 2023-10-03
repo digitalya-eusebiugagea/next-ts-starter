@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { appWithTranslation } from 'next-i18next';
 import * as React from 'react';
 import { createEmotionSsrAdvancedApproach } from 'tss-react/next/pagesDir';
 
@@ -37,4 +38,7 @@ const { augmentDocumentWithEmotionCache, withAppEmotionCache } = createEmotionSs
 
 export { augmentDocumentWithEmotionCache };
 
-export default withAppEmotionCache(MyApp);
+// export default withAppEmotionCache(MyApp);
+// // Wrap MyApp with appWithTranslation HOC manually to prevent conflict
+// export default appWithTranslation(MyApp);
+export default withAppEmotionCache(appWithTranslation(MyApp));
