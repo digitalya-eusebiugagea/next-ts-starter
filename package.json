@@ -20,7 +20,9 @@
     "prepare": "husky install",
     "semantic-release": "semantic-release",
     "commit": "cz",
-    "clear:dependencies": "rm -rf node_modules/"
+    "clear:dependencies": "rm -rf node_modules/",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
   },
   "dependencies": {
     "classnames": "^2.3.2",
@@ -38,6 +40,13 @@
     "@next/eslint-plugin-next": "^13.2.4",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
+    "@storybook/addon-essentials": "^7.0.0-rc.5",
+    "@storybook/addon-interactions": "^7.0.0-rc.5",
+    "@storybook/addon-links": "^7.0.0-rc.5",
+    "@storybook/blocks": "^7.0.0-rc.5",
+    "@storybook/nextjs": "^7.0.0-rc.5",
+    "@storybook/react": "^7.0.0-rc.5",
+    "@storybook/testing-library": "^0.0.14-next.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@types/aos": "^3.0.4",
@@ -79,6 +88,7 @@
     "rimraf": "^3.0.2",
     "semantic-release": "^20.1.1",
     "start-server-and-test": "^1.14.0",
+    "storybook": "^7.0.0-rc.5",
     "typescript": "^4.7.4"
   }
 }
